@@ -1,8 +1,8 @@
 # 01_Markdown Editor
 
-> **marked.js** - 마크다운 문법을 HTML로 컴파일
-> **lodash.js** - 자바스크립트 함수형 라이브러리
-> **v-value, v-on:input(@input), v-html**
+- **marked.js** - 마크다운 문법을 HTML로 컴파일
+- **lodash.js** - 자바스크립트 함수형 라이브러리
+- **v-value, v-on:input(@input), v-html**
 
 ## Result
 <a target="_blank" href="https://jsfiddle.net/chrisvfritz/0dzvcf4d">JSFiddle</a>
