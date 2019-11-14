@@ -1,4 +1,4 @@
-# 01_Markdown Editor 
+# 01_Markdown Editor  
 
 > **marked.js** - 마크다운 문법을 HTML로 컴파일<br>
 > **lodash.js** - 자바스크립트 함수형 라이브러리<br>
