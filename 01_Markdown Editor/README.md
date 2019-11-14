@@ -1,13 +1,14 @@
-# 01_Markdown Editor
+### 01_Markdown Editor
 
-- marked.js - 마크다운 문법을 HTML로 컴파일
-- lodash.js - 자바스크립트 함수형 라이브러리
-- v-value, v-on:input(@input), v-html
+> - **marked.js** - 마크다운 문법을 HTML로 컴파일
+> - **lodash.js** - 자바스크립트 함수형 라이브러리
+> - **v-value, v-on:input(@input), v-html**
 
-## Result
-<a target="_blank" href="https://jsfiddle.net/chrisvfritz/0dzvcf4d">JSFiddle</a>
 
-## HTML
+#### Result
+<iframe width="100%" height="400" src="//jsfiddle.net/rpsce9L7/embedded/result,html,js,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+#### HTML
 ```html
 <script src="https://unpkg.com/marked@0.3.6"></script>
 <script src="https://unpkg.com/lodash@4.16.0"></script>
@@ -18,8 +19,10 @@
     <div v-html="compiledMarkdown"></div>
 </div>
 ```
-> v-html : compliledMarkdown 함수의 리턴값을 HTML으로 출력
-## JavaScript
+
+> - **v-html** - compliledMarkdown 함수의 리턴값을 HTML으로 출력
+ 
+#### JavaScript
 ```javascript
 new Vue({
     el: '#editor',
@@ -41,7 +44,10 @@ new Vue({
     }
 })
 ```
-> _.dobounce : lodashJS 함수 (지정한 시간에 한번만 실행)
+
+> - ** _.dobounce** - lodashJS 함수 (지정한 시간에 한번만 실행)
+
+
 ## CSS
 ```css
 html, body, #editor {
