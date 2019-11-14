@@ -8,7 +8,7 @@
 <a target="_blank" href="https://jsfiddle.net/chrisvfritz/0dzvcf4d">JSFiddle</a>
 
 ## HTML
-```
+```html
 <script src="https://unpkg.com/marked@0.3.6"></script>
 <script src="https://unpkg.com/lodash@4.16.0"></script>
 <div id="editor">
@@ -18,9 +18,9 @@
     <div v-html="compiledMarkdown"></div>
 </div>
 ```
-> * v-html : compliledMarkdown 함수의 리턴값을 HTML으로 출력
+> v-html : compliledMarkdown 함수의 리턴값을 HTML으로 출력
 ## JavaScript
-```
+```javascript
 new Vue({
     el: '#editor',
     data: {
@@ -41,9 +41,9 @@ new Vue({
     }
 })
 ```
-> * _.dobounce : lodashJS 함수 (지정한 시간에 한번만 실행)
+> _.dobounce : lodashJS 함수 (지정한 시간에 한번만 실행)
 ## CSS
-```
+```css
 html, body, #editor {
     margin: 0;
     height: 100%;
