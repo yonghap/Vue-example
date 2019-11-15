@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>02_Github Commits</title>
-</head>
-<body>
-<h1>02_Github Commits</h1>
+# 02_Github Commits  
+
+> **v-bind, v-model, v-for, filters**
+
+## Result
+<a target="_blank" href="https://jsfiddle.net/yyx990803/c5g8xnar/">JSFiddle</a>
+
+## HTML
+```html
 <div id="demo">
     <h2>Latest Vue.js Commits</h2>
     <!-- 등록된 브랜치 길이만큼 input radio 생성-->
@@ -34,9 +31,10 @@
         </li>
     </ul>
 </div>
-
-
-<script>
+```
+> **{{ message | filter function }}** - filters에 정의된 함수에 message를 매개변수로 전달
+## JavaScript
+```javascript
 var apiURL = 'https://api.github.com/repos/vuejs/vue/commits?per_page=3&sha='
 
 /**
@@ -88,8 +86,11 @@ var demo = new Vue({
         }
     }
 })
-</script>
-<style>
+```
+> **filters** - 텍스트 형식화를 적용할 수 있는 필터 제공
+ 
+## CSS
+```css
 #demo {
     font-family: 'Helvetica', Arial, sans-serif;
 }
@@ -104,7 +105,4 @@ li {
 .author, .date {
     font-weight: bold;
 }
-body {max-width:1000px;margin:0 auto}
-</style>
-</body>
-</html>
+```
