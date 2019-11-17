@@ -1,6 +1,7 @@
 # 02_Github Commits  
 
-> **v-bind, v-model, v-for, filters**
+> **JavaScript** - indexOf(), slice(), replace(), XMLHttpRequest <br>
+> **VueJS** - :id, :value, v-model, v-for, filters
 
 ## Result
 <a target="_blank" href="https://jsfiddle.net/yyx990803/c5g8xnar/">JSFiddle</a>
@@ -88,6 +89,7 @@ var demo = new Vue({
 })
 ```
 > **filters** - 텍스트 형식화를 적용할 수 있는 필터 제공
+> **slice()** - 문자열을 잘라서 새로운 문자열로 반환
  
 ## CSS
 ```css

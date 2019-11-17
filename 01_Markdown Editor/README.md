@@ -1,8 +1,8 @@
 # 01_Markdown Editor  
 
+> **VueJS** - :value, @input, v-html <br>
 > **marked.js** - 마크다운 문법을 HTML로 컴파일<br>
 > **lodash.js** - 자바스크립트 함수형 라이브러리<br>
-> **v-value, v-on:input(@input), v-html**
 
 ## Result
 <a target="_blank" href="https://jsfiddle.net/chrisvfritz/0dzvcf4d">JSFiddle</a>
@@ -41,7 +41,10 @@ new Vue({
     }
 })
 ```
-> **_.dobounce** - lodashJS 함수 (지정한 시간에 한번만 실행)
+> **_.dobounce** - lodashJS 함수 (지정한 시간에 한번만 실행)<br>
+> **indexOf()** - 문자열 값과 일치하는 첫번째 위치 반환. 값이 없으면 -1 반환
+> **slice()** - 문자열을 잘라서 새로운 문자열로 반환
+
 ## CSS
 ```css
 html, body, #editor {
