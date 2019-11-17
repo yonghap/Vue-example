@@ -1,6 +1,14 @@
 # 03_Grid Component 
 
-> **JavaScript** - filter(), keys(), some(), toLowerCase(), indexOf(), slide(). sort(). charAt(), toUpperCase()<br>
+
+## Overview
+
+데이터 정렬을 위해서는 3가지 정보가 필요합니다.
+- 데이터 : 원시 데이터 -> 정렬되거나 서칭된 데이터
+- 정렬기준 : name, power 등 정렬의 기준이 되는 기준항목
+- 정렬방법 : 오름차순, 내림차순
+
+> **JavaScript** - filter(), keys(), some(), toLowerCase(), indexOf(), slide(), sort(), charAt(), toUpperCase()<br>
 > **VueJS** - @click, :class, v-for, filters, props, template
 
 ## Result
