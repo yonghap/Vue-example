@@ -1,4 +1,4 @@
-# 04_Tree Viue 
+# 04_Tree View 
 
 
 트리 뷰의 특징
@@ -153,20 +153,20 @@ var demo = new Vue({
  
 ## CSS
 ```css
-    body {
-        font-family: Menlo, Consolas, monospace;
-        color: #444;
-        max-width:1000px;margin:0 auto
-    }
-    .item {
-        cursor: pointer;
-    }
-    .bold {
-        font-weight: bold;
-    }
-    ul {
-        padding-left: 1em;
-        line-height: 1.5em;
-        list-style-type: dot;
+body {
+    font-family: Menlo, Consolas, monospace;
+    color: #444;
+    max-width:1000px;margin:0 auto
+}
+.item {
+    cursor: pointer;
+}
+.bold {
+    font-weight: bold;
+}
+ul {
+    padding-left: 1em;
+    line-height: 1.5em;
+    list-style-type: dot;
 }
 ```
