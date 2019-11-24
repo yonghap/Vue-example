@@ -1,5 +1,10 @@
 # 06_Modal Component
 
+Modal Component 기능
+- 컴포넌트의 정의
+- prop 전달
+- 동적 컨텐츠 삽입
+- 트랜지션 효과
 
 > **VueJS** - slot, emit(), transition
 
