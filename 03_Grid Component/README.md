@@ -58,6 +58,7 @@
 ```
 > **{{ key | filter function }}** - filters에 정의된 함수에 key를 매개변수로 전달
 
+
 ## JavaScript
 ```javascript
 // register the grid component
