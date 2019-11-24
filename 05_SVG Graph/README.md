@@ -1,11 +1,9 @@
 # 05_SVG Graph 
 
 
-SVG Graph
 - 좌표 이름과 값을 가지는 배열 데이터 필요
 - 최상위 컴포넌트 > 폴리곤 컴포넌트 > 라벨 컴포넌트의 구조
 - 새로운 좌표 추가와 기존 좌표의 삭제 기능
-
 
 > **VueJS** - v-model, @click
 > **JavaScript** - map(), splice(), MATH(), push(), indexOf(), join()
