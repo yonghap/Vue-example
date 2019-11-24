@@ -146,4 +146,6 @@ new Vue({
     transform: scale(1.1);
 }
 ```
+> **transition** - CSS transition 효과를 적용하는 방법
+
 <a target="_blank" href="https://kr.vuejs.org/v2/guide/transitions.html">CSS Transition 공식가이드</a>
