@@ -5,15 +5,15 @@
 > **VueJS** - transition, v-for
 
 ## Result
-<a target="_blank" href="https://jsfiddle.net/box252/qwt56zxv/1">JSFiddle</a>
+<a target="_blank" href="https://jsfiddle.net/box252/qwt56zxv/2">JSFiddle</a>
 
 ## HTML
 ```html
 <div id="app">
     <div class="main">
-        <transition-group name="fade" tag="div">
+        <transition-group name="fade" tag="div" mode="in-out">
             <div v-for="i in [currentIndex]" :key="i">
-                <img :src="currentImg">
+                <div class="color" :style="{ backgroundColor : currentColor }"></div>
             </div>
         </transition-group>
         <a class="prev" @click="prev" href="#">&#10094;</a>
@@ -31,11 +31,11 @@ new  Vue({
     data() {
         return {
             // 슬라이더 이미지 배열
-            images : [
-                "https://cdn.pixabay.com/photo/2019/12/23/22/44/cape-george-4715579_960_720.jpg",
-                "https://cdn.pixabay.com/photo/2019/06/08/20/50/mountain-4260974_960_720.jpg",
-                "https://cdn.pixabay.com/photo/2017/10/16/03/00/cn-tower-2856018_960_720.jpg",
-                "https://cdn.pixabay.com/photo/2017/09/03/16/56/canadian-2711155_960_720.jpg"
+            color : [
+				"green",
+	            "red",
+	            "blue",
+	            "orange"
             ],
             // 타이머
             timer : null,
@@ -50,11 +50,13 @@ new  Vue({
     methods : {
         // 슬라이드 시작
         startSlide : function() {
-            this.timer = setInterval(this.next, 4000);
+            this.timer = setInterval(this.next, 3000);
+
         },
         // 다음 슬라이드
         next : function () {
             this.currentIndex += 1;
+
         },
         // 이전 슬라이드
         prev : function () {
@@ -63,8 +65,8 @@ new  Vue({
     },
     computed : {
         // 활성화된 이미지 주소
-        currentImg : function() {
-            return this.images[Math.abs(this.currentIndex) % this.images.length];
+        currentColor : function() {
+            return this.color[Math.abs(this.currentIndex) % this.color.length];
         }
     }
 })
@@ -73,18 +75,19 @@ new  Vue({
 ```css
 .fade-enter-active,
 .fade-leave-active {
-    transition: all 0.9s ease;
-    overflow: hidden;
-    visibility: visible;
-    position: absolute;
-    width:100%;
+    transition: all .5s ease;
     opacity: 1;
 }
 .fade-enter,
 .fade-leave-to {
-    visibility: hidden;
-    width:100%;
     opacity: 0;
+}
+.fade-leave-to {
+	display:none;
+}
+.color {
+	width:300px;
+	height:600px;
 }
 .prev, .next {
     cursor: pointer;
@@ -111,6 +114,5 @@ new  Vue({
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.9);
 }
-body {position: relative;max-width:1000px;margin:0 auto}
-.main {overflow:hidden;height:100vh}
+#app {overflow:hidden;position:relative;max-width:300px;height:600px;}
 ```
