@@ -1,8 +1,5 @@
 # Vue Example
 
-## VueJS 공식사이트 예제 소스
-[https://kr.vuejs.org/v2/examples](https://kr.vuejs.org/v2/examples/)
-
 ## Example List
 - [마크다운 에디터 - 01_Markdown Editor](https://github.com/yonghap/Vue-example/tree/master/01_Markdown%20Editor)
 - [깃허브 커밋 목록 - 02_Github Commits](https://github.com/yonghap/Vue-example/tree/master/02_Github%20Commits)
